@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://public-economic-policy-advisor.dev/assets/schemas/skill-result.schema.json",
+  "title": "SkillResult",
+  "description": "Envelope wrapping any report plus execution metadata.",
+  "type": "object",
+  "required": ["request_id", "status", "format", "payload", "generated_at"],
+  "additionalProperties": false,
+  "properties": {
+    "request_id": {"type": "string"},
+    "status": {"type": "string", "enum": ["ok", "degraded", "error"]},
+    "format": {"type": "string"},
+    "payload": {"type": "object"},
+    "route_taken": {"type": "string"},
+    "sub_advisors_used": {"type": "array", "items": {"type": "string"}},
+    "tools_used": {"type": "array", "items": {"type": "string"}},
+    "tokens_used": {"type": "object"},
+    "warnings": {"type": "array", "items": {"type": "string"}},
+    "disclaimer": {"type": "string"},
+    "generated_at": {"type": "string", "format": "date-time"}
+  }
+}

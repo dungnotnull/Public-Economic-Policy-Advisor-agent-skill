@@ -1,0 +1,336 @@
+{
+  "source": "RESEARCH-PAPER-KNOWLEDGE-BRAIN.md",
+  "count": 28,
+  "entries": [
+    {
+      "number": 1,
+      "id": "musgrave-1959",
+      "title": "The Theory of Public Finance",
+      "authors_year": "Richard Musgrave, 1959 (McGraw-Hill)",
+      "core_principle": "Government has three economic branches - allocation, distribution, and stabilization - each justifying distinct public-sector interventions; public finance is the study of how these branches are financed and coordinated.",
+      "methodologies": [
+        "welfare-economics-cba",
+        "distribution-redistribution"
+      ],
+      "operational_application": "Frames the skill's separation of efficiency (allocation/market failure) from equity (distribution), enforced as distinct report fields (`distributional_effects` separated from the CBA verdict). Grounds `references/01-welfare-economics-cba.md` and `references/06-distribution-redistribution.md`."
+    },
+    {
+      "number": 2,
+      "id": "atkinson-stiglitz-1980",
+      "title": "Lectures on Public Economics",
+      "authors_year": "Anthony Atkinson & Joseph Stiglitz, 1980 (McGraw-Hill)",
+      "core_principle": "Welfare economics with explicit attention to second-best effects and distributional weights; optimal policy must trade off efficiency against equity, and information constraints make first-best rules inapplicable.",
+      "methodologies": [
+        "welfare-economics-cba",
+        "distribution-redistribution"
+      ],
+      "operational_application": "Justifies the `cost_benefit_analysis` tool's confidence-weighted, ordinal-magnitude aggregation (avoiding spurious first-best precision) and the explicit separation of efficiency from equity in `PolicyAnalysisReport`."
+    },
+    {
+      "number": 3,
+      "id": "harberger-1962",
+      "title": "The Incidence of the Corporation Income Tax",
+      "authors_year": "Arnold Harberger, 1962 (Journal of Political Economy)",
+      "core_principle": "In a closed economy with perfectly inelastic capital, the corporate income tax is borne by all capital owners (not workers or consumers); incidence is determined by relative factor elasticities and mobility, not statutory assignment.",
+      "methodologies": [
+        "tax-incidence"
+      ],
+      "operational_application": "Core of the `tax_incidence` tool: buyer share = Es/(Es+Ed), seller share = Ed/(Es+Ed); the more inelastic side bears the burden. Drives `TaxIncidenceReport` and `references/02-tax-incidence.md`."
+    },
+    {
+      "number": 4,
+      "id": "coase-1960",
+      "title": "The Problem of Social Cost",
+      "authors_year": "Ronald Coase, 1960 (Journal of Law and Economics)",
+      "core_principle": "Externalities are reciprocal; with well-defined property rights and low transaction costs, private bargaining can internalize external costs without Pigouvian intervention. Transaction costs determine whether markets or regulation are efficient.",
+      "methodologies": [
+        "market-failure"
+      ],
+      "operational_application": "The `market_failure_diagnostic` tool's `negative_externality` signal and the caveat that \"intervention should target the specific failure, not be broader than necessary\" (Coasean precision). Grounds `references/03-market-failure.md`."
+    },
+    {
+      "number": 5,
+      "id": "samuelson-1954",
+      "title": "The Pure Theory of Public Expenditure",
+      "authors_year": "Paul Samuelson, 1954 (Review of Economics and Statistics)",
+      "core_principle": "Pure public goods are non-rival and non-excludable; their optimal provision requires summing individual marginal willingness-to-pay, and private markets under-supply them, justifying public financing.",
+      "methodologies": [
+        "market-failure"
+      ],
+      "operational_application": "The `public_good` failure type in `market_failure_diagnostic` and its intervention mapping to public provision/financing."
+    },
+    {
+      "number": 6,
+      "id": "akerlof-1970",
+      "title": "The Market for 'Lemons'",
+      "authors_year": "George Akerlof, 1970 (Quarterly Journal of Economics)",
+      "core_principle": "Asymmetric information (adverse selection) can cause markets to unravel - bad quality drives out good - justifying disclosure, standards, licensing, or pooling interventions.",
+      "methodologies": [
+        "market-failure"
+      ],
+      "operational_application": "The `information_asymmetry` failure type and its intervention rationale (disclosure, standards, pooling) in the diagnostic tool."
+    },
+    {
+      "number": 7,
+      "id": "keynes-1936",
+      "title": "The General Theory of Employment, Interest and Money",
+      "authors_year": "John Maynard Keynes, 1936 (Macmillan)",
+      "core_principle": "Aggregate demand can be chronically deficient because of sticky prices/wages and liquidity preference, justifying active fiscal and monetary stabilization rather than relying on self-correcting markets.",
+      "methodologies": [
+        "macro-schools"
+      ],
+      "operational_application": "The `Keynesian` viewpoint in the `comparative_schools` tool and the `pro-con-debate` template; grounds the countercyclical-policy position in `ProConDebateReport`."
+    },
+    {
+      "number": 8,
+      "id": "friedman-1968",
+      "title": "The Role of Monetary Policy",
+      "authors_year": "Milton Friedman, 1968 (American Economic Review)",
+      "core_principle": "Inflation is always and everywhere a monetary phenomenon; the long-run Phillips curve is vertical, so discretionary fine-tuning is inferior to stable money-growth rules.",
+      "methodologies": [
+        "macro-schools"
+      ],
+      "operational_application": "The `Monetarist` viewpoint in `comparative_schools` and the caveat on velocity instability; provides the counter-position to Keynesian stimulus in pro/con debates."
+    },
+    {
+      "number": 9,
+      "id": "lucas-1976",
+      "title": "Econometric Policy Evaluation: A Critique",
+      "authors_year": "Robert Lucas, 1976 (Carnegie-Rochester Conference Series)",
+      "core_principle": "Structural econometric parameters are not invariant to changes in policy regime; agents form expectations and adapt, so models estimated under one regime cannot be mechanically used to forecast another.",
+      "methodologies": [
+        "macro-schools",
+        "causal-inference"
+      ],
+      "operational_application": "The `New Classical` viewpoint and the universal caveat in `references/05-causal-inference.md` (\"behavioural responses to a new policy may differ from historical estimates\"); guards against over-confident empirical extrapolation."
+    },
+    {
+      "number": 10,
+      "id": "laffer-wanniski-1978",
+      "title": "The Way the World Works (Laffer curve)",
+      "authors_year": "Arthur Laffer, discussed in Jude Wanniski, 1978 (Basic Books)",
+      "core_principle": "Beyond some tax rate, higher rates reduce revenue by shrinking the taxed base and encouraging avoidance; revenue feedback is largest where rates are already high and elasticities large.",
+      "methodologies": [
+        "tax-incidence",
+        "macro-schools"
+      ],
+      "operational_application": "The `Supply-side` viewpoint and the `tax_incidence` caveat that revenue feedback is \"usually modest at typical OECD rates\"; the tool flags distributional regressivity alongside supply-side claims."
+    },
+    {
+      "number": 11,
+      "id": "deaton-2010",
+      "title": "Instruments, Randomization, and Learning about Development",
+      "authors_year": "Angus Deaton, 2010 (Journal of Economic Literature)",
+      "core_principle": "RCTs deliver high internal validity but limited external validity and often lack the structural theory needed for extrapolation; credible identification must be paired with economic theory and careful scale-up reasoning.",
+      "methodologies": [
+        "causal-inference"
+      ],
+      "operational_application": "The `causal_evaluation` tool's explicit external-validity threat for RCTs and the \"do not fabricate effect sizes\" guardrail; grounds `CausalEvaluationReport.threats_to_validity`."
+    },
+    {
+      "number": 12,
+      "id": "angrist-pischke-2009",
+      "title": "Mostly Harmless Econometrics",
+      "authors_year": "Joshua Angrist & Jorn-Steffen Pischke, 2009 (Princeton University Press)",
+      "core_principle": "Causal effects are identified by clean research designs (RCT, DiD, RDD, IV); the credibility revolution prioritizes identification over structural modeling, with transparent attention to assumptions.",
+      "methodologies": [
+        "causal-inference"
+      ],
+      "operational_application": "The five-method selection logic and identification strategies in the `causal_evaluation` tool; the default confidence tiers (RCT high, DiD/RDD medium, IV/natural experiment low)."
+    },
+    {
+      "number": 13,
+      "id": "banerjee-duflo-2011",
+      "title": "Poor Economics",
+      "authors_year": "Abhijit Banerjee & Esther Duflo, 2011 (PublicAffairs)",
+      "core_principle": "Randomized field experiments can identify what works for the poor at a granular level, enabling evidence-based welfare-policy design while remaining humble about generalization.",
+      "methodologies": [
+        "causal-inference",
+        "distribution-redistribution"
+      ],
+      "operational_application": "The RCT recommendation path in `causal_evaluation` when `can_randomize` is true and the welfare-policy evidence framing in `PolicyAnalysisReport.empirical_evidence`."
+    },
+    {
+      "number": 14,
+      "id": "atkinson-2015",
+      "title": "Inequality: What Can Be Done?",
+      "authors_year": "Anthony B. Atkinson, 2015 (Harvard University Press)",
+      "core_principle": "Inequality is a policy choice; a concrete package of progressive taxation, social insurance, and public services can reduce it, and distributional impact must be assessed separately from efficiency.",
+      "methodologies": [
+        "distribution-redistribution",
+        "welfare-economics-cba"
+      ],
+      "operational_application": "The distributional section of `references/06-distribution-redistribution.md` and the rule that distributional effects are reported as a separate dimension in every report."
+    },
+    {
+      "number": 15,
+      "id": "piketty-2014",
+      "title": "Capital in the Twenty-First Century",
+      "authors_year": "Thomas Piketty, 2014 (Harvard University Press)",
+      "core_principle": "When the return on capital exceeds growth (r > g) for long periods, wealth concentration rises, informing debates on capital and inheritance taxation - but long-run forecasts are speculative.",
+      "methodologies": [
+        "tax-incidence",
+        "distribution-redistribution"
+      ],
+      "operational_application": "The `tax-incidence` caveat on capital-tax debates and the \"long-run dynamics are speculative as forecasts\" guardrail in the distribution reference."
+    },
+    {
+      "number": 16,
+      "id": "oecd-2019",
+      "title": "Tax Policy Reforms: OECD and Selected Partner Economies",
+      "authors_year": "OECD, 2019 (OECD Publishing)",
+      "core_principle": "Comparative, regularly updated cross-country evidence on tax design reveals what reforms actually do in practice, anchoring incidence and distributional claims in observed policy rather than theory alone.",
+      "methodologies": [
+        "tax-incidence",
+        "distribution-redistribution"
+      ],
+      "operational_application": "Empirical anchor for `tax_incidence` caveats (\"elasticities are empirical estimates, not constants\") and the comparative-evidence framing in tax reports."
+    },
+    {
+      "number": 17,
+      "id": "worldbank-2021",
+      "title": "World Development Report: Data for Better Lives",
+      "authors_year": "World Bank, 2021 (World Bank)",
+      "core_principle": "Better data and public-data infrastructure enable more credible, granular policy evaluation and improved public-service delivery.",
+      "methodologies": [
+        "causal-inference"
+      ],
+      "operational_application": "The data-requirements fields in `CausalEvaluationReport` and the recommendation to \"pre-register the analysis and report threats to validity transparently.\""
+    },
+    {
+      "number": 18,
+      "id": "mankiw-2020",
+      "title": "Principles of Economics (9th ed.)",
+      "authors_year": "N. Gregory Mankiw, 2020 (Cengage)",
+      "core_principle": "Ten principles of economics (trade-offs, marginal thinking, incentives, trade) provide the standard micro/macro bridge from theory to policy analysis.",
+      "methodologies": [
+        "welfare-economics-cba"
+      ],
+      "operational_application": "The common-language framing of the `cost_benefit_analysis` and `market_failure_diagnostic` tools and the glossary definitions in `references/glossary.md`."
+    },
+    {
+      "number": 19,
+      "id": "stiglitz-2000",
+      "title": "Economics of the Public Sector (3rd ed.)",
+      "authors_year": "Joseph Stiglitz, 2000 (Norton)",
+      "core_principle": "Comprehensive public-sector economics: market failures, public goods, taxation, redistribution, and the limits of government must be analyzed together with attention to information and incentive constraints.",
+      "methodologies": [
+        "welfare-economics-cba",
+        "market-failure",
+        "distribution-redistribution"
+      ],
+      "operational_application": "The integrated framing behind `PolicyAnalysisReport` combining CBA + market failure + distribution; cited as the foundational public-sector reference."
+    },
+    {
+      "number": 20,
+      "id": "rodrik-2007",
+      "title": "One Economics, Many Recipes",
+      "authors_year": "Dani Rodrik, 2007 (Princeton University Press)",
+      "core_principle": "There is no single institutional recipe for growth; good policy is context-specific, diagnostic, and pragmatic, grounded in comparative institutional analysis rather than universal blueprints.",
+      "methodologies": [
+        "macro-schools",
+        "distribution-redistribution"
+      ],
+      "operational_application": "The \"empirical resolution depends on context\" statement in `ProConDebateReport` and the deferral to context-specific causal evidence rather than endorsing one school as settled."
+    },
+    {
+      "number": 21,
+      "id": "mirrlees-1971",
+      "title": "An Exploration in the Theory of Optimum Income Taxation",
+      "authors_year": "James Mirrlees, 1971 (Review of Economic Studies)",
+      "core_principle": "Optimal nonlinear income taxation balances redistribution against the incentive cost of distorting labour supply; the marginal tax schedule depends on the distribution of abilities and the social welfare function, not on a flat \"fair\" rate.",
+      "methodologies": [
+        "tax-incidence",
+        "distribution-redistribution"
+      ],
+      "operational_application": "Deepens the `tax-incidence` welfare-effects analysis (deadweight loss from distorting labour supply) and grounds the optimal-tax framing in distributional analysis; warns against declaring a single \"correct\" top rate."
+    },
+    {
+      "number": 22,
+      "id": "diamond-mirrlees-1971",
+      "title": "Optimal Taxation and Public Production I & II",
+      "authors_year": "Peter Diamond & James Mirrlees, 1971 (American Economic Review)",
+      "core_principle": "Production efficiency is generically optimal under broad conditions: indirect taxes should not distort intermediate production; tax distortions should be confined to final consumer goods to minimize productive efficiency loss.",
+      "methodologies": [
+        "tax-incidence",
+        "welfare-economics-cba"
+      ],
+      "operational_application": "Refines the `tax_incidence` welfare_effects and the `cost_benefit_analysis` deadweight-loss item; supports the \"target the specific failure, not broader than necessary\" precision principle."
+    },
+    {
+      "number": 23,
+      "id": "oates-1972",
+      "title": "Fiscal Federalism",
+      "authors_year": "Wallace Oates, 1972 (Harcourt Brace Jovanovich)",
+      "core_principle": "The assignment of fiscal responsibilities should follow the principle of fiscal equivalence - each public service should be provided by the jurisdiction whose boundaries match the benefit area; decentralization improves allocative efficiency for local goods.",
+      "methodologies": [
+        "market-failure",
+        "distribution-redistribution"
+      ],
+      "operational_application": "Extends the `public_good` analysis to jurisdictional assignment; informs the distributional and jurisdiction fields when the user specifies a level of government."
+    },
+    {
+      "number": 24,
+      "id": "tiebout-1956",
+      "title": "A Pure Theory of Local Expenditures",
+      "authors_year": "Charles Tiebout, 1956 (Journal of Political Economy)",
+      "core_principle": "When local public goods differ across jurisdictions and households are mobile, \"voting with feet\" can reveal preferences and produce an efficient provision of local goods, mitigating the Samuelson under-supply problem for local goods.",
+      "methodologies": [
+        "market-failure"
+      ],
+      "operational_application": "Nuances the `public_good` diagnosis: for local goods, interjurisdictional mobility can partially substitute for intervention; flagged as a caveat in `references/03-market-failure.md`."
+    },
+    {
+      "number": 25,
+      "id": "chetty-2009",
+      "title": "Sufficient Statistics for Welfare Analysis",
+      "authors_year": "Raj Chetty, 2009 (Annual Review of Economics)",
+      "core_principle": "Many welfare and incidence conclusions can be derived from a small set of \"sufficient statistics\" (elasticities, pass-through, behavioural responses) without fully specifying a structural model - making incidence analysis tractable and empirically grounded.",
+      "methodologies": [
+        "tax-incidence",
+        "welfare-economics-cba"
+      ],
+      "operational_application": "Methodological justification for the `tax_incidence` tool's reliance on two elasticities as sufficient statistics for incidence shares, and for the `cost_benefit_analysis` tool's use of magnitudes and elasticities rather than full structural models."
+    },
+    {
+      "number": 26,
+      "id": "saez-2001",
+      "title": "Using Elasticities to Derive Optimal Income Tax Rates",
+      "authors_year": "Emmanuel Saez, 2001 (Review of Economic Studies)",
+      "core_principle": "Optimal top marginal tax rates can be derived from three sufficient statistics - the elasticity of taxable income, the Pareto parameter of the income distribution, and the social welfare weight - making optimal-tax claims empirically testable.",
+      "methodologies": [
+        "tax-incidence",
+        "distribution-redistribution"
+      ],
+      "operational_application": "Grounds the `tax_incidence` caveat that revenue feedback and optimal rates \"depend on elasticities which are empirical estimates\" and the refusal to declare a single optimal top rate; cited in distributional analysis."
+    },
+    {
+      "number": 27,
+      "id": "card-krueger-1994",
+      "title": "Minimum Wages and Employment",
+      "authors_year": "David Card & Alan Krueger, 1994 (NBER / American Economic Review)",
+      "core_principle": "A well-identified natural experiment (comparing fast-food employment across a policy border) can overturn prior consensus; credible quasi-experimental design can estimate policy effects that theory alone could not settle.",
+      "methodologies": [
+        "causal-inference"
+      ],
+      "operational_application": "Canonical example behind the `natural_experiment` and `DiD` methods in `causal_evaluation`; demonstrates why contested policy questions should be deferred to credible empirical identification rather than theory."
+    },
+    {
+      "number": 28,
+      "id": "heckman-1979",
+      "title": "Sample Selection Bias as a Specification Error",
+      "authors_year": "James Heckman, 1979 (Econometrica)",
+      "core_principle": "Non-random sample selection biases estimated relationships; credible policy evaluation must model selection into treatment and exposure, or estimates will be systematically misleading.",
+      "methodologies": [
+        "causal-inference"
+      ],
+      "operational_application": "The \"selection into exposure\" and \"endogeneity of the shock\" threats to validity in `CausalEvaluationReport`, and the universal guardrail against naively comparing treated and untreated groups without an identification strategy."
+    }
+  ],
+  "cross_check": {
+    "registry_size": 28,
+    "parsed_size": 28,
+    "missing_in_registry": [],
+    "missing_in_brain": []
+  }
+}

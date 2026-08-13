@@ -1,0 +1,36 @@
+{
+  "skill_name": "public-economic-policy-advisor",
+  "skill_version": "1.0.0",
+  "environment": "production",
+  "log_level": "INFO",
+  "log_format": "json",
+  "llm": {
+    "model": "claude-sonnet-4-5",
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_output_tokens": 4096,
+    "request_timeout_seconds": 60.0,
+    "max_retries": 3,
+    "retry_backoff_base_seconds": 1.5,
+    "provider": "auto",
+    "api_base_url": ""
+  },
+  "context_budget": {
+    "model_context_window": 200000,
+    "reserved_output_tokens": 4096,
+    "reserved_system_tokens": 2048,
+    "reference_overhead_ratio": 0.35
+  },
+  "features": {
+    "enable_chain_of_thought_router": true,
+    "enable_sub_advisor_delegation": true,
+    "enable_structured_logging": true,
+    "enable_disclaimer_injection": true,
+    "enable_multi_viewpoint_balance": true,
+    "enable_citation_grounding": true,
+    "enable_context_window_budgeting": true,
+    "enable_graceful_llm_fallback": true,
+    "enable_rag_reference_loading": true,
+    "enable_event_emission": true
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://public-economic-policy-advisor.dev/assets/schemas/policy-analysis-report.schema.json",
+  "title": "PolicyAnalysisReport",
+  "description": "Canonical output for general policy-analysis requests produced by the Public Economic Policy Advisor skill.",
+  "type": "object",
+  "required": [
+    "request_id",
+    "title",
+    "framework_applied",
+    "summary",
+    "disclaimer",
+    "generated_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "framework_applied": {
+      "type": "string"
+    },
+    "jurisdiction": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "market_failure_diagnosis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cost_benefit": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/costBenefitItem"
+      }
+    },
+    "distributional_effects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/distributionalEffect"
+      }
+    },
+    "viewpoints": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/viewpoint"
+      }
+    },
+    "empirical_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "citations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/citation"
+      }
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence_base": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "label"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "relevance": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "narrative": {
+      "type": "string"
+    }
+  },
+  "definitions": {
+    "costBenefitItem": {
+      "type": "object",
+      "required": [
+        "category",
+        "description",
+        "estimated_magnitude",
+        "direction"
+      ],
+      "properties": {
+        "category": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "estimated_magnitude": {
+          "type": "string"
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "benefit",
+            "cost"
+          ]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      }
+    },
+    "distributionalEffect": {
+      "type": "object",
+      "required": [
+        "group",
+        "share_or_change",
+        "direction"
+      ],
+      "properties": {
+        "group": {
+          "type": "string"
+        },
+        "share_or_change": {
+          "type": "string"
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "gain",
+            "loss",
+            "neutral"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "viewpoint": {
+      "type": "object",
+      "required": [
+        "school",
+        "position",
+        "key_argument"
+      ],
+      "properties": {
+        "school": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "key_argument": {
+          "type": "string"
+        },
+        "caveats": {
+          "type": "string"
+        }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "required": [
+        "source_id",
+        "label"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "relevance": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://public-economic-policy-advisor.dev/assets/schemas/causal-evaluation-report.schema.json",
+  "title": "CausalEvaluationReport",
+  "type": "object",
+  "required": [
+    "request_id",
+    "policy_under_evaluation",
+    "recommended_method",
+    "method_rationale",
+    "identification_strategy",
+    "data_requirements",
+    "threats_to_validity",
+    "disclaimer",
+    "generated_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "policy_under_evaluation": {
+      "type": "string"
+    },
+    "recommended_method": {
+      "type": "string",
+      "enum": [
+        "RCT",
+        "DiD",
+        "RDD",
+        "IV",
+        "natural experiment"
+      ]
+    },
+    "method_rationale": {
+      "type": "string"
+    },
+    "identification_strategy": {
+      "type": "string"
+    },
+    "data_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "threats_to_validity": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_effect_estimate": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "citations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence_base": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "narrative": {
+      "type": "string"
+    }
+  }
+}

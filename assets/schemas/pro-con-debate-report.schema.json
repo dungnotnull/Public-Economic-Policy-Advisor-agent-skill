@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://public-economic-policy-advisor.dev/assets/schemas/pro-con-debate-report.schema.json",
+  "title": "ProConDebateReport",
+  "type": "object",
+  "required": [
+    "request_id",
+    "question",
+    "stance_a",
+    "stance_b",
+    "disclaimer",
+    "generated_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string"
+    },
+    "stance_a": {
+      "type": "string"
+    },
+    "stance_b": {
+      "type": "string"
+    },
+    "pros_a": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cons_a": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pros_b": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cons_b": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "empirical_resolution": {
+      "type": "string"
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "citations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence_base": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

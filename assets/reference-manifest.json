@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-08-04T03:48:59+00:00",
+  "count": 11,
+  "entries": [
+    {
+      "id": "01-welfare-economics-cba",
+      "path": "references/01-welfare-economics-cba.md",
+      "title": "01-welfare-economics-cba",
+      "summary": "﻿# 01 — Welfare Economics & Cost-Benefit Analysis (Operational Reference)",
+      "tokens_estimate": 462,
+      "chars": 1850
+    },
+    {
+      "id": "02-tax-incidence",
+      "path": "references/02-tax-incidence.md",
+      "title": "02-tax-incidence",
+      "summary": "﻿# 02 — Tax & Subsidy Incidence (Operational Reference)",
+      "tokens_estimate": 412,
+      "chars": 1651
+    },
+    {
+      "id": "03-market-failure",
+      "path": "references/03-market-failure.md",
+      "title": "03-market-failure",
+      "summary": "﻿# 03 — Market-Failure Framework (Operational Reference)",
+      "tokens_estimate": 531,
+      "chars": 2124
+    },
+    {
+      "id": "04-macro-schools",
+      "path": "references/04-macro-schools.md",
+      "title": "04-macro-schools",
+      "summary": "﻿# 04 — Comparative Macroeconomic Schools (Operational Reference)",
+      "tokens_estimate": 546,
+      "chars": 2186
+    },
+    {
+      "id": "05-causal-inference",
+      "path": "references/05-causal-inference.md",
+      "title": "05-causal-inference",
+      "summary": "﻿# 05 — Causal Policy-Evaluation Methods (Operational Reference)",
+      "tokens_estimate": 545,
+      "chars": 2181
+    },
+    {
+      "id": "06-distribution-redistribution",
+      "path": "references/06-distribution-redistribution.md",
+      "title": "06-distribution-redistribution",
+      "summary": "﻿# 06 — Distribution & Redistribution (Operational Reference)",
+      "tokens_estimate": 313,
+      "chars": 1255
+    },
+    {
+      "id": "glossary",
+      "path": "references/glossary.md",
+      "title": "glossary",
+      "summary": "﻿# Glossary — Public Economic Policy Advisor",
+      "tokens_estimate": 462,
+      "chars": 1851
+    },
+    {
+      "id": "cost-benefit-analysis",
+      "path": "references/prompt-templates/cost-benefit-analysis.md",
+      "title": "cost-benefit-analysis",
+      "summary": "﻿# Prompt Template — Cost-Benefit Analysis",
+      "tokens_estimate": 255,
+      "chars": 1023
+    },
+    {
+      "id": "policy-memo",
+      "path": "references/prompt-templates/policy-memo.md",
+      "title": "policy-memo",
+      "summary": "﻿# Prompt Template — Policy Memo",
+      "tokens_estimate": 299,
+      "chars": 1198
+    },
+    {
+      "id": "pro-con-debate",
+      "path": "references/prompt-templates/pro-con-debate.md",
+      "title": "pro-con-debate",
+      "summary": "﻿# Prompt Template — Balanced Pro/Con Debate",
+      "tokens_estimate": 240,
+      "chars": 961
+    },
+    {
+      "id": "tax-incidence-analysis",
+      "path": "references/prompt-templates/tax-incidence-analysis.md",
+      "title": "tax-incidence-analysis",
+      "summary": "﻿# Prompt Template — Tax Incidence Analysis",
+      "tokens_estimate": 252,
+      "chars": 1008
+    }
+  ]
+}

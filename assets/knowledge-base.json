@@ -1,0 +1,168 @@
+{
+  "count": 20,
+  "sources": [
+    {
+      "number": 1,
+      "label": "R. Musgrave (1959). The Theory of Public Finance. McGraw-Hill",
+      "note": "Foundational public-finance framework.",
+      "methodologies": [
+        "welfare-economics-cba"
+      ]
+    },
+    {
+      "number": 2,
+      "label": "A. Atkinson, J. Stiglitz (1980). Lectures on Public Economics. McGraw-Hill",
+      "note": "Canonical public-economics theory text.",
+      "methodologies": [
+        "welfare-economics-cba",
+        "distribution-redistribution"
+      ]
+    },
+    {
+      "number": 3,
+      "label": "A. Harberger (1962). The Incidence of the Corporation Income Tax. Journal of Political Economy",
+      "note": "Foundational tax-incidence model.",
+      "methodologies": [
+        "tax-incidence"
+      ]
+    },
+    {
+      "number": 4,
+      "label": "R. Coase (1960). The Problem of Social Cost. Journal of Law and Economics",
+      "note": "Foundational externality/property-rights framework.",
+      "methodologies": [
+        "market-failure"
+      ]
+    },
+    {
+      "number": 5,
+      "label": "P. Samuelson (1954). The Pure Theory of Public Expenditure. Review of Economics and Statistics",
+      "note": "Public-goods theory foundation.",
+      "methodologies": [
+        "market-failure"
+      ]
+    },
+    {
+      "number": 6,
+      "label": "G. Akerlof (1970). The Market for 'Lemons': Quality Uncertainty and the Market Mechanism. Quarterly Journal of Economics",
+      "note": "Information asymmetry / market-failure foundation.",
+      "methodologies": [
+        "market-failure"
+      ]
+    },
+    {
+      "number": 7,
+      "label": "J. M. Keynes (1936). The General Theory of Employment, Interest and Money. Macmillan",
+      "note": "Foundational Keynesian macroeconomic framework.",
+      "methodologies": [
+        "macro-schools"
+      ]
+    },
+    {
+      "number": 8,
+      "label": "M. Friedman (1968). The Role of Monetary Policy. American Economic Review",
+      "note": "Foundational monetarist framework.",
+      "methodologies": [
+        "macro-schools"
+      ]
+    },
+    {
+      "number": 9,
+      "label": "R. Lucas (1976). Econometric Policy Evaluation: A Critique. Carnegie-Rochester Conference Series",
+      "note": "New Classical critique relevant to policy modeling.",
+      "methodologies": [
+        "macro-schools"
+      ]
+    },
+    {
+      "number": 10,
+      "label": "A. Laffer, discussed in J. Wanniski (1978). The Way the World Works. Basic Books",
+      "note": "Supply-side tax-policy theory.",
+      "methodologies": [
+        "tax-incidence",
+        "macro-schools"
+      ]
+    },
+    {
+      "number": 11,
+      "label": "A. Deaton (2010). Instruments, Randomization, and Learning about Development. Journal of Economic Literature",
+      "note": "Critical review of causal policy-evaluation methods.",
+      "methodologies": [
+        "causal-inference"
+      ]
+    },
+    {
+      "number": 12,
+      "label": "J. Angrist, J.-S. Pischke (2009). Mostly Harmless Econometrics. Princeton University Press",
+      "note": "Standard reference on diff-in-diff/RDD/IV methods.",
+      "methodologies": [
+        "causal-inference"
+      ]
+    },
+    {
+      "number": 13,
+      "label": "E. Duflo, A. Banerjee (2011). Poor Economics: A Radical Rethinking of the Way to Fight Global Poverty. PublicAffairs",
+      "note": "RCT-based welfare-policy evaluation approach.",
+      "methodologies": [
+        "causal-inference"
+      ]
+    },
+    {
+      "number": 14,
+      "label": "A. B. Atkinson (2015). Inequality: What Can Be Done? Harvard University Press",
+      "note": "Distributional policy-analysis framework.",
+      "methodologies": [
+        "welfare-economics-cba",
+        "distribution-redistribution"
+      ]
+    },
+    {
+      "number": 15,
+      "label": "T. Piketty (2014). Capital in the Twenty-First Century. Harvard University Press",
+      "note": "Long-run analysis informing tax/redistribution debates.",
+      "methodologies": [
+        "tax-incidence"
+      ]
+    },
+    {
+      "number": 16,
+      "label": "OECD (2019). Tax Policy Reforms: OECD and Selected Partner Economies. OECD Publishing",
+      "note": "Comparative empirical tax-policy evidence base.",
+      "methodologies": [
+        "tax-incidence"
+      ]
+    },
+    {
+      "number": 17,
+      "label": "World Bank (2021). World Development Report: Data for Better Lives. World Bank",
+      "note": "Empirical data-driven public-policy evaluation resource.",
+      "methodologies": [
+        "causal-inference"
+      ]
+    },
+    {
+      "number": 18,
+      "label": "N. G. Mankiw (2020). Principles of Economics (9th ed.). Cengage",
+      "note": "Standard framework linking micro/macro theory to policy analysis.",
+      "methodologies": [
+        "welfare-economics-cba"
+      ]
+    },
+    {
+      "number": 19,
+      "label": "J. Stiglitz (2000). Economics of the Public Sector (3rd ed.). Norton",
+      "note": "Comprehensive public-sector economics reference.",
+      "methodologies": [
+        "welfare-economics-cba"
+      ]
+    },
+    {
+      "number": 20,
+      "label": "D. Rodrik (2007). One Economics, Many Recipes: Globalization, Institutions, and Economic Growth. Princeton University Press",
+      "note": "Comparative institutional-policy analysis framework.",
+      "methodologies": [
+        "distribution-redistribution"
+      ]
+    }
+  ]
+}

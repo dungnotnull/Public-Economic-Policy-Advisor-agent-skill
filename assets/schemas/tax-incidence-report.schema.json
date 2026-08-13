@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://public-economic-policy-advisor.dev/assets/schemas/tax-incidence-report.schema.json",
+  "title": "TaxIncidenceReport",
+  "type": "object",
+  "required": [
+    "request_id",
+    "instrument",
+    "statutory_burden",
+    "economic_incidence",
+    "disclaimer",
+    "generated_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "jurisdiction": {
+      "type": "string"
+    },
+    "statutory_burden": {
+      "type": "string"
+    },
+    "economic_incidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "group",
+          "share_or_change",
+          "direction"
+        ],
+        "properties": {
+          "group": {
+            "type": "string"
+          },
+          "share_or_change": {
+            "type": "string"
+          },
+          "direction": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "elasticity_assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "welfare_effects": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "distributional_effects": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "caveats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "citations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence_base": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "narrative": {
+      "type": "string"
+    }
+  }
+}
